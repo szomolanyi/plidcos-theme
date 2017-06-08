@@ -33,7 +33,7 @@ header {
 header .logo-tagline {
     position: absolute;
     left: 60px;
-    top: 70px;
+    top: 60px;
     color: #fff;
     text-align: left;
 }
@@ -43,6 +43,7 @@ header .logo-tagline h1 {
     font-size: 1em;
     letter-spacing: .8px;
     display: block;
+    margin: 0;
 }
 
 header .sub-nav {
@@ -69,7 +70,7 @@ header .sub-nav .translator a {
 header .sub-nav .logo-wrapper {
     display: block;
     position: relative;
-    left: 30px;
+    /*left: 30px;*/
     margin-bottom: 5px;
 }
 
@@ -197,6 +198,8 @@ header .main-nav a {
     font-weight: bold;
 }
 
+/*
+R.Sz.
 .left img {
     float: left;
 
@@ -205,7 +208,7 @@ header .main-nav a {
 .right img {
     float: right;
 }
-
+*/
 .content-interior img {
     margin: 0 5px;
     max-width: 100%;
@@ -216,7 +219,7 @@ header .main-nav a {
     border-right: 1px solid #b0b1b1;
     border-left: 1px solid #b0b1b1;
     box-sizing: border-box;
-
+    padding: 0 20px;
 }
 
 .middle h1 {
@@ -283,7 +286,7 @@ footer {
 footer .foot-nav {
     text-align: left;
     display: inline-block;
-    margin: 0 35px;
+    margin: 0 45px;
     vertical-align: top;
 }
 
@@ -562,19 +565,20 @@ div.content ul {
 }
 
 div.product-content h1 {
-    text-align: left;
-    margin-left: 165px;
+    /*text-align: left; */
+    text-align: center;
+    /*margin-left: 165px;*/
     font-size: 1.5em;
     line-height: 1em;
-    padding-right: 70px;
+    /*padding-right: 70px;
     position: relative;
-    left: -10px;
+    left: -10px;*/
 }
 
 div.product-content a,
 a.pdf-button:link,
 a.pdf-button:visited {
-    background: url("../images/button.png"); 
+    background: url("../images/button.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -586,9 +590,9 @@ a.pdf-button:visited {
     margin-bottom: 8px;
 }
 
-.product-wrapper {
+/*.product-wrapper {
     width: 580px;
-}
+}*/
 
 div.product-line-right {
     width: 49%;
@@ -892,6 +896,7 @@ div.row label {
     .foot-nav table {
         margin-left: auto;
         margin-right: auto;
+        width: auto;
     }
 
     footer nav.foot-nav.table1 {
@@ -955,11 +960,11 @@ div.row label {
     }
 
     div.product-line-right {
-        width: 63%;
+        width: 55%;
     }
 
     div.product-line-left {
-        width: 36%;
+        width: 44%;
     }
 
     .distributor-home-content {
@@ -984,9 +989,9 @@ div.row label {
 
 @media only screen and (max-width: 900px) {
     header .main-nav {
-        width: 100%;
+        /* R.Sz. width: 100%; */
         text-align: center;
-        right: 0;
+        right: 10;
     }
 
     div.product-line-right {
@@ -1041,7 +1046,7 @@ div.row label {
 @media only screen and (max-width: 650px) {
 
     header {
-        height: 130px;
+        height: 140px;
         text-align: center;
     }
 
@@ -1068,7 +1073,7 @@ div.row label {
     header .logo-tagline h1 {
         font-size: 1.15em;
         display: block;
-        padding-top: 5px;
+        /*padding-top: 5px;*/
     }
 
 
@@ -1129,6 +1134,10 @@ div.row label {
         -webkit-box-shadow: 6px 6px 0px rgba(0,0,0,0.25);
         -moz-box-shadow: 6px 6px 0px rgba(0,0,0,0.25);
         box-shadow: 6px 6px 0px rgba(0,0,0,0.25);
+    }
+
+    .main-nav li {
+      float: none;
     }
 
     header nav.main-nav.open {
@@ -1278,7 +1287,7 @@ div.row label {
     }
 
     .slick-next {
-        /*background: url("../images/right-arrow.png"); TODO */
+        background: url("../images/right-arrow.png");
         right: -4px;
         width: 30px;
         top: 9px;
@@ -1294,7 +1303,7 @@ div.row label {
 
 
     .slick-next:hover, .slick-next:focus {
-        /*background: url("../images/right-arrow.png"); TODO */
+        background: url("../images/right-arrow.png");
         background-repeat: no-repeat;
         background-position: center;
 

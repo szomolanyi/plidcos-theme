@@ -107,11 +107,17 @@ add_action( 'widgets_init', 'plidcos_theme_widgets_init' );
 function plidcos_theme_scripts() {
 	wp_enqueue_style( 'plidcos-theme-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'plidco-slick', get_template_directory_uri() . '/css/slick.css', array() );
+	wp_enqueue_style( 'plidco-slick-theme', get_template_directory_uri() . '/css/slick-theme.css', array() );
+
 	wp_enqueue_style( 'plidco-style', get_template_directory_uri() . '/css/plidco.css', array() );
 
 	wp_enqueue_script( 'plidcos-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'plidcos-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+	wp_enqueue_script( 'plidco-js', get_template_directory_uri() . '/js/plidco.js', array('jquery'), null, true );
+	wp_enqueue_script( 'plidco-slick', get_template_directory_uri() . '/js/slick.min.js', array(), null, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

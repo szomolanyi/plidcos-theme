@@ -77,44 +77,6 @@ get_header(); ?>
           }
         ?>
 
-<!--
-        <div class="mobile-nav-slider">
-          <div>
-              <a href="/">Home</a>
-              <img src="http://plidco.com/modules/default/resources/images/red-button.png">
-          </div>
-              <div>
-              <a href="/about-plidco">About</a>
-              <img src="http://plidco.com/modules/default/resources/images/red-button.png">
-          </div>
-              <div>
-              <a href="/product-line">Products</a>
-              <img src="http://plidco.com/modules/default/resources/images/red-button.png">
-          </div>
-              <div>
-              <a href="/videos">Videos</a>
-              <img src="http://plidco.com/modules/default/resources/images/red-button.png">
-          </div>
-              <div>
-              <a href="/distributor-locator">Find Distributor</a>
-              <img src="http://plidco.com/modules/default/resources/images/red-button.png">
-          </div>
-              <div>
-              <a href="/request-quote">Request Quote</a>
-              <img src="http://plidco.com/modules/default/resources/images/red-button.png">
-          </div>
-              <div>
-              <a href="/request-catalog">Catalog</a>
-              <img src="http://plidco.com/modules/default/resources/images/red-button.png">
-          </div>
-              <div>
-              <a href="/contact">Contact</a>
-              <img src="http://plidco.com/modules/default/resources/images/red-button.png">
-          </div>
-      </div>
--->
-
-
         <div class="content inter-content">
             <div class="product-content">
                 <div class="product-line-left">

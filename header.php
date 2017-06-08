@@ -25,18 +25,20 @@
 
 	<header id="masthead" class="site-header" role="banner">
     <div class="logo-tagline">
-        <a href="/"><img src="http://plidco.com/modules/default/resources/images/logo.png"></a>
+        <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png"></a>
 
         <h1>Pipeline Repair & Maintenance Fittings</h1>
 
     </div>
 
 
-    <a href="tel://1-440-871-5700"><img class="phone" src="http://plidco.com/modules/default/resources/images/phone.png"></a>
+    <a href="tel://1-440-871-5700"><img class="phone" src="<?php echo get_template_directory_uri(); ?>/images/phone.png"></a>
 
     <div class="menu-wrapper">
-        <img src="http://plidco.com/modules/default/resources/images/menu_icon.png" class="menu-icon">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/menu_icon.png" class="menu-icon">
         <nav class="main-nav">
+					<?php wp_nav_menu( array( 'menu' => 'Main' ) ); ?>
+<!--
                                 <a href="/">Home</a>
 
                                 <a href="/about-plidco">About</a>
@@ -52,23 +54,52 @@
                                 <a href="/request-catalog">Catalog</a>
 
                                 <a href="/contact">Contact</a>
-
+-->
                         </nav>
     </div>
 
     <nav class="sub-nav">
         <div class="logo-wrapper">
             <a href="http://www.youtube.com/user/PipelineRepair" target="_blank">
-                <img src="http://plidco.com/modules/default/resources/images/youtube-logo.jpg"></a>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/youtube-logo.jpg"></a>
             <a href="http://www.facebook.com/pages/PLIDCO-The-Pipe-Line-Development-Company/132720888658" target="_blank">
-                <img src="http://plidco.com/modules/default/resources/images/facebook-logo.jpg"></a>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/facebook-logo.jpg"></a>
             <a href="http://www.linkedin.com/in/plidco" target="_blank">
-                <img src="http://plidco.com/modules/default/resources/images/linkedin-logo.jpg"></a>
-            <a href="http://www.pipelinerepairandsafety.com/" target="_blank"><img src="http://plidco.com/modules/default/resources/images/blog-logo.png"></a>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/linkedin-logo.jpg"></a>
+            <a href="http://www.pipelinerepairandsafety.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/blog-logo.png"></a>
         </div>
     </nav>
 
 
 	</header><!-- #masthead -->
+
+	<?php
+	wp_nav_menu( array(
+		'menu' => 'Main', 'container_class' => 'mobile-nav-slider', 'items_wrap' => '%3$s',
+	    'walker' => new WPDocs_Walker_Nav_Menu()
+	) );
+
+	/**
+	 * Custom walker class.
+	 */
+	class WPDocs_Walker_Nav_Menu extends Walker_Nav_Menu {
+	    /**
+	     * Start the element output.
+	     *
+	     * Adds main/sub-classes to the list items and links.
+	     *
+	     * @param string $output Passed by reference. Used to append additional content.
+	     * @param object $item   Menu item data object.
+	     * @param int    $depth  Depth of menu item. Used for padding.
+	     * @param array  $args   An array of arguments. @see wp_nav_menu()
+	     * @param int    $id     Current item ID.
+	     */
+	    function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+	        global $wp_query;
+
+	        $output .= '<div><a href="'.$item->url.'">'.$item->title.'</a><img src="'.get_template_directory_uri().'/images/red-button.png"></div>';
+	    }
+	}
+	?>
 
 	<div id="content" class="site-content">
