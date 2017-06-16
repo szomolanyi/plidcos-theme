@@ -55,7 +55,10 @@ get_header(); ?>
             $prds = $prds . '<div class="content-editable"><p>';
             $args = array(
               // Arguments for your query.
-              'category_name' => $category->slug
+              'category_name' => $category->slug,
+							'posts_per_page' => -1,
+							'orderby' => 'name',
+							'order' => 'asc'
             );
             // Custom query.
             $query = new WP_Query( $args );
