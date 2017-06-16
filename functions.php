@@ -149,3 +149,41 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Custom walker class.
+ */
+class WPDocs_Walker_Nav_Menu_ShortCode extends Walker_Nav_Menu {
+		/**
+		 * Start the element output.
+		 *
+		 * Adds main/sub-classes to the list items and links.
+		 *
+		 * @param string $output Passed by reference. Used to append additional content.
+		 * @param object $item   Menu item data object.
+		 * @param int    $depth  Depth of menu item. Used for padding.
+		 * @param array  $args   An array of arguments. @see wp_nav_menu()
+		 * @param int    $id     Current item ID.
+		 */
+		function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+				global $wp_query;
+
+				$output .= '<div><a href="'.$item->url.'">'.$item->title.'</a><img src="'.get_template_directory_uri().'/images/red-button.png"></div>';
+		}
+
+		function end_el( &$output, $item, $depth = 0, $args = array() ) {
+			$output .= '';
+		}
+}
+/**
+* mobile nav shortcode
+*/
+function mobilemenu_shortcode($atts = [], $content = null, $tag = '')
+{
+	return wp_nav_menu( array(
+		'menu' => 'Main', 'container_class' => 'mobile-nav-slider', 'items_wrap' => '%3$s', 'echo' => false,
+	    'walker' => new WPDocs_Walker_Nav_Menu_ShortCode()
+	) );
+};
+
+add_shortcode('mobile-menu', 'mobilemenu_shortcode');

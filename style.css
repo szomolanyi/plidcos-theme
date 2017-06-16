@@ -944,3 +944,11 @@ object {
 .content .wp-video {
 	margin: 0 auto;
 }
+
+.site-content {
+	display: block;
+}
+
+.site-content h1 {
+	line-height: 1.6em;
+}

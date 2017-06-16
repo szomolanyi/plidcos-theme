@@ -74,6 +74,8 @@
 	</header><!-- #masthead -->
 
 	<?php
+
+/* Mobile menu pojde cez shortcode
 	wp_nav_menu( array(
 		'menu' => 'Main', 'container_class' => 'mobile-nav-slider', 'items_wrap' => '%3$s',
 	    'walker' => new WPDocs_Walker_Nav_Menu()
@@ -99,6 +101,10 @@
 
 	        $output .= '<div><a href="'.$item->url.'">'.$item->title.'</a><img src="'.get_template_directory_uri().'/images/red-button.png"></div>';
 	    }
+
+			function end_el( &$output, $item, $depth = 0, $args = array() ) {
+				$output .= '';
+			}
 	}
 	?>
 
