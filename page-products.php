@@ -23,7 +23,7 @@ get_header(); ?>
 
       endwhile; // End of the loop.
       ?>
-
+			<div class="main-wrapper">
 			<?php
 
       $args = array(
@@ -92,7 +92,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

@@ -949,6 +949,12 @@ object {
 	display: block;
 }
 
-.site-content h1 {
-	line-height: 1.6em;
+.entry-content > div > div:not(:first-child) {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.main-wrapper {
+	margin-left: 5%;
+	margin-right: 5%;
 }
