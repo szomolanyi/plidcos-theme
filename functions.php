@@ -185,5 +185,13 @@ function mobilemenu_shortcode($atts = [], $content = null, $tag = '')
 	    'walker' => new WPDocs_Walker_Nav_Menu_ShortCode()
 	) );
 };
-
 add_shortcode('mobile-menu', 'mobilemenu_shortcode');
+
+/* video button shortcode */
+function video_button_shorcode($atts = [], $content = null, $tag = '')
+{
+	return '<a href="#" href="clamp-ring" class="pldvideo__button" onclick="pldSetVideo(\''.$atts['mp4'].'\',\''.$atts['webm'].'\');">'
+		.$atts['title']
+		.'</a>';
+}
+add_shortcode('video-button', 'video_button_shorcode');

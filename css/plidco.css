@@ -1488,3 +1488,25 @@ div.row label {
 table {
   table-layout: auto;
 }
+
+.pldvideo__button:link,
+.pldvideo__button:visited {
+    background: url("../images/button.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 225px;
+    margin: 0 20px;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.pldvideo__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+}

@@ -1,3 +1,29 @@
+
+
+function pldSetVideo(mp4, webm) {
+  jQuery('#video-wrapper').empty();
+
+  mp4source = jQuery('<source/>', {
+    src: mp4,
+    type: "video/mp4",
+    id: "mp4-source"
+  });
+  webmsource = jQuery('<source/>', {
+    stc: webm,
+    type: "video/webm",
+    id: "webm-source"
+  });
+  video=jQuery('<video/>', {
+    controls: "controls",
+    id: "video"
+  });
+  video.append(mp4source).append(webmsource);
+  video.html('Your browser does not support video playback.')
+  jQuery('#video-wrapper').append(video);
+  jQuery('#video').append(mp4source).append(webmsource);
+}
+
+
 jQuery(document).ready(function () {
 
 
