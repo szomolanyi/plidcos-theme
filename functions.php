@@ -105,12 +105,10 @@ add_action( 'widgets_init', 'plidcos_theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function plidcos_theme_scripts() {
-	wp_enqueue_style( 'plidcos-theme-style', get_stylesheet_uri() );
-
 	wp_enqueue_style( 'plidco-slick', get_template_directory_uri() . '/css/slick.css', array() );
 	wp_enqueue_style( 'plidco-slick-theme', get_template_directory_uri() . '/css/slick-theme.css', array() );
 
-	wp_enqueue_style( 'plidco-style', get_template_directory_uri() . '/css/plidco.css', array() );
+	wp_enqueue_style( 'plidcos-theme-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'plidcos-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
