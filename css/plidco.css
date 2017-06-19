@@ -446,6 +446,7 @@ div.video-list a {
     max-width: 100%;
 }
 
+/*
 .slideshow {
     width: 100%;
     padding-bottom: 31.7%;
@@ -465,7 +466,8 @@ sup {
     position: relative;
     top: -.5em;
 }
-
+*/
+/*
 div.row a,
 div.row label {
     display: inline-block;
@@ -490,9 +492,10 @@ div.row label {
     margin: 0 auto;
     max-width: 100%;
 }
+*/
 
 @media only screen and (max-width: 1100px) {
-
+/*
     .distributor-home-content {
         padding: 50px 0;
     }
@@ -509,7 +512,7 @@ div.row label {
     .main-content .head {
         margin: 0 15px 25px 15px;
     }
-
+*/
 /*
     .content {
         border-left: 1px solid #b0b1b1;
@@ -519,13 +522,14 @@ div.row label {
     }
 */
 
+/*
     .content-interior {
         width: 80%;
         margin-bottom: 30px;
         border-bottom: 1px solid #555;
         padding-bottom: 15px;
     }
-
+*/
     .middle {
         border-left: none;
         border-right: none;
@@ -592,7 +596,7 @@ div.row label {
         padding-left: 0;
         margin-bottom: 30px;
     }
-
+/*
     .inter-content {
         border: none;
     }
@@ -600,6 +604,7 @@ div.row label {
     form table.edit-table {
         display: inline-table;
     }
+*/
     div.product-line-right {
         width: 55%;
     }
@@ -607,7 +612,7 @@ div.row label {
     div.product-line-left {
         width: 44%;
     }
-
+/*
     .distributor-home-content {
         text-align: center;
     }
@@ -620,7 +625,7 @@ div.row label {
         width: 100%;
         float: none;
     }
-
+*/
     /*a.pdf-button:link, a.pdf-button:visited {*/
         /*display: block;*/
         /*width: auto;*/
@@ -653,7 +658,7 @@ div.row label {
         margin-bottom: 10px;
         padding-right: 0;
     }
-
+/*
     .video-overlay video {
         width: 630px;
     }
@@ -663,14 +668,14 @@ div.row label {
         padding: 10px;
     }
 
-
+*/
     header .main-nav a {
         padding: 0 3px;
     }
 
 
 }
-
+/*
 @media only screen and (max-width: 700px) {
 
     .video-content {
@@ -683,7 +688,7 @@ div.row label {
     }
 
 }
-
+*/
 @media only screen and (max-width: 650px) {
 
     header {
@@ -815,13 +820,13 @@ div.row label {
     }
 
 
-
+/*
     .banner h1 {
         margin-right: 0;
         margin-left: 0;
     }
-
-
+*/
+/*
     .main-content {
         margin: 0;
     }
@@ -833,11 +838,11 @@ div.row label {
         padding: 30px 10px;
         text-align: center;
     }
-
+*/
     .middle p {
         text-align: center;
     }
-
+/*
     .left img {
         float: none;
     }
@@ -845,7 +850,8 @@ div.row label {
     .right img {
         float: none;
     }
-
+*/
+/*
     .content div.content-interior:first-child {
         border-top: 1px solid #555;
     }
@@ -853,7 +859,7 @@ div.row label {
     .inter-content {
         padding: 0 20px;
     }
-
+*/
     footer {
         margin: 0 15px;
     }
@@ -866,6 +872,7 @@ div.row label {
     footer .foot-nav a {
         font-size: 1.2em;
     }
+    /*
     form table.edit-table {
         width: 100%;
     }
@@ -881,7 +888,7 @@ div.row label {
     .captcha-container {
         width: 100%;
     }
-
+*/
     footer table tr td {
         display: block;
     }
@@ -961,7 +968,7 @@ div.row label {
         width: 100%;
         display: block;
     }
-
+/*
     .video-overlay video {
         width: 450px;
     }
@@ -971,7 +978,7 @@ div.row label {
         -webkit-column-count: 1;
         column-count: 1;
     }
-
+*/
 }
 
 
@@ -1024,7 +1031,7 @@ div.row label {
     .mobile-nav-slider  img {
         display: block;
     }
-
+/*
     .video-overlay video {
         width: 310px;
     }
@@ -1034,7 +1041,7 @@ div.row label {
         padding: 0;
         padding-top: 10px ;
     }
-
+*/
 }
 
 @media only screen and (max-width: 374px) {
@@ -1047,7 +1054,7 @@ div.row label {
         width: 33px;
         margin: 2px;
     }
-
+/*
     header .login-translator-wrapper a:first-child {
         margin: 2px;
     }
@@ -1055,7 +1062,7 @@ div.row label {
     header .login-translator-wrapper .translator {
         margin-left: 2px;
     }
-
+*/
     header .main-nav {
         width: 145px;
         letter-spacing: -60px;
@@ -1063,7 +1070,7 @@ div.row label {
 }
 
 
-
+/*
 #distributors {
 	padding-left: 20px;
 }
@@ -1072,3 +1079,4 @@ div.row label {
 table {
   table-layout: auto;
 }
+*/
